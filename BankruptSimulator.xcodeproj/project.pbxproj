@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29EA36BD1F44F98100634A0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36BC1F44F98100634A0C /* AppDelegate.swift */; };
+		29EA36BF1F44F98100634A0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36BE1F44F98100634A0C /* ViewController.swift */; };
+		29EA36C21F44F98100634A0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EA36C01F44F98100634A0C /* Main.storyboard */; };
+		29EA36C41F44F98100634A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29EA36C31F44F98100634A0C /* Assets.xcassets */; };
+		29EA36C71F44F98100634A0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EA36C51F44F98100634A0C /* LaunchScreen.storyboard */; };
+		29EA36D21F44F98100634A0C /* BankruptSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36D11F44F98100634A0C /* BankruptSimulatorTests.swift */; };
+		29EA36DD1F44F98100634A0C /* BankruptSimulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36DC1F44F98100634A0C /* BankruptSimulatorUITests.swift */; };
+		29EA36EB1F44F9A700634A0C /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36EA1F44F9A700634A0C /* Board.swift */; };
+		29EA36ED1F44F9AF00634A0C /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36EC1F44F9AF00634A0C /* Tile.swift */; };
+		29EA36EF1F44F9B700634A0C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36EE1F44F9B700634A0C /* Player.swift */; };
+		29EA36F11F44F9E600634A0C /* BoardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36F01F44F9E600634A0C /* BoardParser.swift */; };
+		29EA36F31F44FA0600634A0C /* gameConfig.txt in Resources */ = {isa = PBXBuildFile; fileRef = 29EA36F21F44FA0600634A0C /* gameConfig.txt */; };
+		29EA36F51F44FA5800634A0C /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36F41F44FA5800634A0C /* GameManager.swift */; };
+		29EA36F71F45022D00634A0C /* ImpulsivePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36F61F45022D00634A0C /* ImpulsivePlayer.swift */; };
+		29EA36F91F45024E00634A0C /* CautiousPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36F81F45024E00634A0C /* CautiousPlayer.swift */; };
+		29EA36FB1F45027000634A0C /* PickyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36FA1F45027000634A0C /* PickyPlayer.swift */; };
+		29EA36FD1F45027C00634A0C /* RandomPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA36FC1F45027C00634A0C /* RandomPlayer.swift */; };
+		29EA37011F462B3300634A0C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA37001F462B3300634A0C /* Extensions.swift */; };
+		29EA37051F46497800634A0C /* GameFinishData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EA37041F46497800634A0C /* GameFinishData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29EA36CE1F44F98100634A0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29EA36B11F44F98100634A0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29EA36B81F44F98100634A0C;
+			remoteInfo = BankruptSimulator;
+		};
+		29EA36D91F44F98100634A0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29EA36B11F44F98100634A0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29EA36B81F44F98100634A0C;
+			remoteInfo = BankruptSimulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29EA36B91F44F98100634A0C /* BankruptSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankruptSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29EA36BC1F44F98100634A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29EA36BE1F44F98100634A0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29EA36C11F44F98100634A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29EA36C31F44F98100634A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29EA36C61F44F98100634A0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29EA36C81F44F98100634A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EA36CD1F44F98100634A0C /* BankruptSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankruptSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29EA36D11F44F98100634A0C /* BankruptSimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankruptSimulatorTests.swift; sourceTree = "<group>"; };
+		29EA36D31F44F98100634A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EA36D81F44F98100634A0C /* BankruptSimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankruptSimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29EA36DC1F44F98100634A0C /* BankruptSimulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankruptSimulatorUITests.swift; sourceTree = "<group>"; };
+		29EA36DE1F44F98100634A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29EA36EA1F44F9A700634A0C /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		29EA36EC1F44F9AF00634A0C /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		29EA36EE1F44F9B700634A0C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		29EA36F01F44F9E600634A0C /* BoardParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardParser.swift; sourceTree = "<group>"; };
+		29EA36F21F44FA0600634A0C /* gameConfig.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gameConfig.txt; sourceTree = "<group>"; };
+		29EA36F41F44FA5800634A0C /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		29EA36F61F45022D00634A0C /* ImpulsivePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpulsivePlayer.swift; sourceTree = "<group>"; };
+		29EA36F81F45024E00634A0C /* CautiousPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CautiousPlayer.swift; sourceTree = "<group>"; };
+		29EA36FA1F45027000634A0C /* PickyPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickyPlayer.swift; sourceTree = "<group>"; };
+		29EA36FC1F45027C00634A0C /* RandomPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomPlayer.swift; sourceTree = "<group>"; };
+		29EA37001F462B3300634A0C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		29EA37041F46497800634A0C /* GameFinishData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameFinishData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29EA36B61F44F98100634A0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA36CA1F44F98100634A0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA36D51F44F98100634A0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29EA36B01F44F98100634A0C = {
+			isa = PBXGroup;
+			children = (
+				29EA36BB1F44F98100634A0C /* BankruptSimulator */,
+				29EA36D01F44F98100634A0C /* BankruptSimulatorTests */,
+				29EA36DB1F44F98100634A0C /* BankruptSimulatorUITests */,
+				29EA36BA1F44F98100634A0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29EA36BA1F44F98100634A0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36B91F44F98100634A0C /* BankruptSimulator.app */,
+				29EA36CD1F44F98100634A0C /* BankruptSimulatorTests.xctest */,
+				29EA36D81F44F98100634A0C /* BankruptSimulatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29EA36BB1F44F98100634A0C /* BankruptSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36FF1F462B2300634A0C /* Extensions */,
+				29EA36FE1F45028100634A0C /* PlayerProfiles */,
+				29EA36BC1F44F98100634A0C /* AppDelegate.swift */,
+				29EA36BE1F44F98100634A0C /* ViewController.swift */,
+				29EA36C01F44F98100634A0C /* Main.storyboard */,
+				29EA36C31F44F98100634A0C /* Assets.xcassets */,
+				29EA36C51F44F98100634A0C /* LaunchScreen.storyboard */,
+				29EA36C81F44F98100634A0C /* Info.plist */,
+				29EA36EA1F44F9A700634A0C /* Board.swift */,
+				29EA36F21F44FA0600634A0C /* gameConfig.txt */,
+				29EA36EC1F44F9AF00634A0C /* Tile.swift */,
+				29EA36F41F44FA5800634A0C /* GameManager.swift */,
+				29EA37041F46497800634A0C /* GameFinishData.swift */,
+				29EA36F01F44F9E600634A0C /* BoardParser.swift */,
+			);
+			path = BankruptSimulator;
+			sourceTree = "<group>";
+		};
+		29EA36D01F44F98100634A0C /* BankruptSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36D11F44F98100634A0C /* BankruptSimulatorTests.swift */,
+				29EA36D31F44F98100634A0C /* Info.plist */,
+			);
+			path = BankruptSimulatorTests;
+			sourceTree = "<group>";
+		};
+		29EA36DB1F44F98100634A0C /* BankruptSimulatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36DC1F44F98100634A0C /* BankruptSimulatorUITests.swift */,
+				29EA36DE1F44F98100634A0C /* Info.plist */,
+			);
+			path = BankruptSimulatorUITests;
+			sourceTree = "<group>";
+		};
+		29EA36FE1F45028100634A0C /* PlayerProfiles */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36F61F45022D00634A0C /* ImpulsivePlayer.swift */,
+				29EA36F81F45024E00634A0C /* CautiousPlayer.swift */,
+				29EA36FA1F45027000634A0C /* PickyPlayer.swift */,
+				29EA36FC1F45027C00634A0C /* RandomPlayer.swift */,
+				29EA36EE1F44F9B700634A0C /* Player.swift */,
+			);
+			name = PlayerProfiles;
+			sourceTree = "<group>";
+		};
+		29EA36FF1F462B2300634A0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				29EA37001F462B3300634A0C /* Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29EA36B81F44F98100634A0C /* BankruptSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29EA36E11F44F98100634A0C /* Build configuration list for PBXNativeTarget "BankruptSimulator" */;
+			buildPhases = (
+				29EA36B51F44F98100634A0C /* Sources */,
+				29EA36B61F44F98100634A0C /* Frameworks */,
+				29EA36B71F44F98100634A0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BankruptSimulator;
+			productName = BankruptSimulator;
+			productReference = 29EA36B91F44F98100634A0C /* BankruptSimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29EA36CC1F44F98100634A0C /* BankruptSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29EA36E41F44F98100634A0C /* Build configuration list for PBXNativeTarget "BankruptSimulatorTests" */;
+			buildPhases = (
+				29EA36C91F44F98100634A0C /* Sources */,
+				29EA36CA1F44F98100634A0C /* Frameworks */,
+				29EA36CB1F44F98100634A0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29EA36CF1F44F98100634A0C /* PBXTargetDependency */,
+			);
+			name = BankruptSimulatorTests;
+			productName = BankruptSimulatorTests;
+			productReference = 29EA36CD1F44F98100634A0C /* BankruptSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29EA36D71F44F98100634A0C /* BankruptSimulatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29EA36E71F44F98100634A0C /* Build configuration list for PBXNativeTarget "BankruptSimulatorUITests" */;
+			buildPhases = (
+				29EA36D41F44F98100634A0C /* Sources */,
+				29EA36D51F44F98100634A0C /* Frameworks */,
+				29EA36D61F44F98100634A0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29EA36DA1F44F98100634A0C /* PBXTargetDependency */,
+			);
+			name = BankruptSimulatorUITests;
+			productName = BankruptSimulatorUITests;
+			productReference = 29EA36D81F44F98100634A0C /* BankruptSimulatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29EA36B11F44F98100634A0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = DiegoCo;
+				TargetAttributes = {
+					29EA36B81F44F98100634A0C = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7DZCZ4MLWU;
+						ProvisioningStyle = Automatic;
+					};
+					29EA36CC1F44F98100634A0C = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 29EA36B81F44F98100634A0C;
+					};
+					29EA36D71F44F98100634A0C = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 29EA36B81F44F98100634A0C;
+					};
+				};
+			};
+			buildConfigurationList = 29EA36B41F44F98100634A0C /* Build configuration list for PBXProject "BankruptSimulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29EA36B01F44F98100634A0C;
+			productRefGroup = 29EA36BA1F44F98100634A0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29EA36B81F44F98100634A0C /* BankruptSimulator */,
+				29EA36CC1F44F98100634A0C /* BankruptSimulatorTests */,
+				29EA36D71F44F98100634A0C /* BankruptSimulatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29EA36B71F44F98100634A0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EA36F31F44FA0600634A0C /* gameConfig.txt in Resources */,
+				29EA36C71F44F98100634A0C /* LaunchScreen.storyboard in Resources */,
+				29EA36C41F44F98100634A0C /* Assets.xcassets in Resources */,
+				29EA36C21F44F98100634A0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA36CB1F44F98100634A0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA36D61F44F98100634A0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29EA36B51F44F98100634A0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EA36BF1F44F98100634A0C /* ViewController.swift in Sources */,
+				29EA36BD1F44F98100634A0C /* AppDelegate.swift in Sources */,
+				29EA36F91F45024E00634A0C /* CautiousPlayer.swift in Sources */,
+				29EA36FB1F45027000634A0C /* PickyPlayer.swift in Sources */,
+				29EA36EB1F44F9A700634A0C /* Board.swift in Sources */,
+				29EA37051F46497800634A0C /* GameFinishData.swift in Sources */,
+				29EA36F71F45022D00634A0C /* ImpulsivePlayer.swift in Sources */,
+				29EA36F51F44FA5800634A0C /* GameManager.swift in Sources */,
+				29EA37011F462B3300634A0C /* Extensions.swift in Sources */,
+				29EA36F11F44F9E600634A0C /* BoardParser.swift in Sources */,
+				29EA36EF1F44F9B700634A0C /* Player.swift in Sources */,
+				29EA36ED1F44F9AF00634A0C /* Tile.swift in Sources */,
+				29EA36FD1F45027C00634A0C /* RandomPlayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA36C91F44F98100634A0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EA36D21F44F98100634A0C /* BankruptSimulatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29EA36D41F44F98100634A0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EA36DD1F44F98100634A0C /* BankruptSimulatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29EA36CF1F44F98100634A0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29EA36B81F44F98100634A0C /* BankruptSimulator */;
+			targetProxy = 29EA36CE1F44F98100634A0C /* PBXContainerItemProxy */;
+		};
+		29EA36DA1F44F98100634A0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29EA36B81F44F98100634A0C /* BankruptSimulator */;
+			targetProxy = 29EA36D91F44F98100634A0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29EA36C01F44F98100634A0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29EA36C11F44F98100634A0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29EA36C51F44F98100634A0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29EA36C61F44F98100634A0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29EA36DF1F44F98100634A0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29EA36E01F44F98100634A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29EA36E21F44F98100634A0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7DZCZ4MLWU;
+				INFOPLIST_FILE = BankruptSimulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.BankruptSimulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		29EA36E31F44F98100634A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7DZCZ4MLWU;
+				INFOPLIST_FILE = BankruptSimulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.BankruptSimulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		29EA36E51F44F98100634A0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BankruptSimulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.BankruptSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankruptSimulator.app/BankruptSimulator";
+			};
+			name = Debug;
+		};
+		29EA36E61F44F98100634A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BankruptSimulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.BankruptSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BankruptSimulator.app/BankruptSimulator";
+			};
+			name = Release;
+		};
+		29EA36E81F44F98100634A0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BankruptSimulatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.BankruptSimulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BankruptSimulator;
+			};
+			name = Debug;
+		};
+		29EA36E91F44F98100634A0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BankruptSimulatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diego.BankruptSimulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BankruptSimulator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29EA36B41F44F98100634A0C /* Build configuration list for PBXProject "BankruptSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EA36DF1F44F98100634A0C /* Debug */,
+				29EA36E01F44F98100634A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29EA36E11F44F98100634A0C /* Build configuration list for PBXNativeTarget "BankruptSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EA36E21F44F98100634A0C /* Debug */,
+				29EA36E31F44F98100634A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29EA36E41F44F98100634A0C /* Build configuration list for PBXNativeTarget "BankruptSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EA36E51F44F98100634A0C /* Debug */,
+				29EA36E61F44F98100634A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29EA36E71F44F98100634A0C /* Build configuration list for PBXNativeTarget "BankruptSimulatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EA36E81F44F98100634A0C /* Debug */,
+				29EA36E91F44F98100634A0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29EA36B11F44F98100634A0C /* Project object */;
+}
