@@ -21,7 +21,7 @@ class GameManager {
     }
 
 
-    func simulateGame(numberOfRounds: Int = 1000) -> GameFinishData {
+    func simulateGame(numberOfRounds: Int) -> GameFinishData {
         startGame()
         var roundFinished = 0
         var finishedByTime = true
@@ -42,8 +42,7 @@ class GameManager {
             if p.numberOfCoins > winner.numberOfCoins {
                 winner = p
             }
-
-            print("\(p.getName()) + total coins: \(p.numberOfCoins)")
+            //print("\(p.getName()) - total coins: \(p.numberOfCoins)")
         }
 
         return GameFinishData(winner: winner.getName(), numberOfRounds: roundFinished, finishedByTime: finishedByTime)

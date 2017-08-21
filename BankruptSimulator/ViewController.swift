@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         if let numberRounds = Int(numberOfRounds.text!) {
             rounds = numberRounds
         }
-
+        var sumNumOfRounds = 0
         for i in 1...games {
             let gameFinishedData = gameManager.simulateGame(numberOfRounds: rounds)
             let winner = gameFinishedData.winner
@@ -47,8 +47,9 @@ class ViewController: UIViewController {
             if gameFinishedData.finishedByTime {
                 numberOfGamesByTimeOut += 1
             }
-            averageRounds = (averageRounds * (i - 1) + gameFinishedData.numberOfRounds) / i
+            sumNumOfRounds += gameFinishedData.numberOfRounds
         }
+        averageRounds = sumNumOfRounds / games
 
         finishedLoading()
         showResults()

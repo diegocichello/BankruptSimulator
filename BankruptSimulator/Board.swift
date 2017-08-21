@@ -32,14 +32,14 @@ class Board {
         let playerTile = tiles[player.position]
         if playerTile.owner == nil {
             player.buy(tile: playerTile)
-            print("\(player.getName()) bought Tile: \(player.position)")
+            //print("\(player.getName()) bought Tile: \(player.position)")
             return false
         } else {
             if playerTile.owner == player {
                 return false
             } else {
                 playerTile.owner?.getCoins(coins: playerTile.rentPrice)
-                print("\(player.getName()) payed \(playerTile.rentPrice) rent to \(playerTile.owner!.getName()) on Tile: \(player.position)")
+                //print("\(player.getName()) payed \(playerTile.rentPrice) rent to \(playerTile.owner!.getName()) on Tile: \(player.position)")
                 return player.loseCoins(coins: playerTile.rentPrice)
             }
         }
