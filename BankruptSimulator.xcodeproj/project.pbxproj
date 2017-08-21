@@ -98,6 +98,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2985E68D1F4A86B200E026D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36BE1F44F98100634A0C /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2985E68E1F4A86C100E026D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29EA37041F46497800634A0C /* GameFinishData.swift */,
+				29EA36C51F44F98100634A0C /* LaunchScreen.storyboard */,
+				29EA36C01F44F98100634A0C /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2985E68F1F4A87AC00E026D2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36C31F44F98100634A0C /* Assets.xcassets */,
+				29EA36F21F44FA0600634A0C /* gameConfig.txt */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		2985E6901F4A87F300E026D2 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2985E6921F4A880C00E026D2 /* Entities */,
+				2985E6911F4A87FE00E026D2 /* Manager */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		2985E6911F4A87FE00E026D2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36F01F44F9E600634A0C /* BoardParser.swift */,
+				29EA36F41F44FA5800634A0C /* GameManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		2985E6921F4A880C00E026D2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				29EA36EA1F44F9A700634A0C /* Board.swift */,
+				29EA36EC1F44F9AF00634A0C /* Tile.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
 		29EA36B01F44F98100634A0C = {
 			isa = PBXGroup;
 			children = (
@@ -121,20 +175,14 @@
 		29EA36BB1F44F98100634A0C /* BankruptSimulator */ = {
 			isa = PBXGroup;
 			children = (
+				29EA36BC1F44F98100634A0C /* AppDelegate.swift */,
+				29EA36C81F44F98100634A0C /* Info.plist */,
+				2985E68F1F4A87AC00E026D2 /* Assets */,
+				2985E68E1F4A86C100E026D2 /* View */,
+				2985E68D1F4A86B200E026D2 /* Controller */,
 				29EA36FF1F462B2300634A0C /* Extensions */,
 				29EA36FE1F45028100634A0C /* PlayerProfiles */,
-				29EA36BC1F44F98100634A0C /* AppDelegate.swift */,
-				29EA36BE1F44F98100634A0C /* ViewController.swift */,
-				29EA36C01F44F98100634A0C /* Main.storyboard */,
-				29EA36C31F44F98100634A0C /* Assets.xcassets */,
-				29EA36C51F44F98100634A0C /* LaunchScreen.storyboard */,
-				29EA36C81F44F98100634A0C /* Info.plist */,
-				29EA36EA1F44F9A700634A0C /* Board.swift */,
-				29EA36F21F44FA0600634A0C /* gameConfig.txt */,
-				29EA36EC1F44F9AF00634A0C /* Tile.swift */,
-				29EA36F41F44FA5800634A0C /* GameManager.swift */,
-				29EA37041F46497800634A0C /* GameFinishData.swift */,
-				29EA36F01F44F9E600634A0C /* BoardParser.swift */,
+				2985E6901F4A87F300E026D2 /* Game */,
 			);
 			path = BankruptSimulator;
 			sourceTree = "<group>";
